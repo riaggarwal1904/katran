@@ -310,7 +310,7 @@ get_libbpf() {
     cd "${LIBBPF_DIR}"/src
     make
     #on centos the cp -fpR used was throwing an error, so just use a regular cp -R
-    if [ -f /etc/redhat-release ]; then
+    if [ -f /etc/mariner-release ]; then
         sed -i 's/cp -fpR/cp -R/g' Makefile
     fi
     DESTDIR="$INSTALL_DIR" make install

@@ -1,1 +1,11 @@
 .vscode/
+_build/deps/folly/build
+_build/deps/googletest/build
+_build/deps/grpc/_build
+_build/build
+_build/deps/include
+_build/deps/bin
+_build/deps/lib
+_build/deps/lib64
+_build/deps/share
+_build/deps/usr
