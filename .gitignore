@@ -9,3 +9,4 @@ _build/deps/lib
 _build/deps/lib64
 _build/deps/share
 _build/deps/usr
+_build/deps/bpfprog

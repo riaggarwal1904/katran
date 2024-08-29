@@ -1,4 +1,4 @@
-find_library(LIBELF libelf.a elf)
+find_library(LIBELF libelf.so elf)
 # To support build for katran with user-supplied libbpf path
 set(LIB_BPF_PREFIX "" CACHE STRING "USER Supplied Prefix for libppf path")
 if ( LIB_BPF_PREFIX )
