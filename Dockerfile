@@ -30,20 +30,23 @@ RUN tdnf install -y \
             libsodium-devel \
             bc \
             libevent-devel \
-            protobuf-compiler
+            protobuf-compiler \
+            double-conversion-devel
+
+RUN mkdir /usr/include/fast_float 
+RUN wget -P /usr/include/fast_float https://github.com/fastfloat/fast_float/releases/download/v6.1.4/fast_float.h
+
+# git clone https://github.com/winlibs/liblzma.git
+# cd liblzma
+# ccmake .
+# # Press c for configuration then c again then g for generation
+# make
+# sudo make install 
 
             
 
 # libkrb5-dev \ required for fbthrift not found -- fbthrift might not be needed
 # epel-release not found
-# fast-float not found. It is used to build folly - /home/riaggarwal/katran/_build/deps/folly/build/fbcode_builder/manifests/fast_float
-
-# git clone https://github.com/google/double-conversion.git
-# cd double-conversion
-# cmake -DBUILD_SHARED_LIBS=ON .
-# make
-# sudo make install
-# Can be replaced with tdnf install "double-conversion-devel" -- need to check
 
 # go env -w GO111MODULE=ON
 # go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
