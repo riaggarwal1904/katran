@@ -1,5 +1,16 @@
 [submodule "folly"]
-    path = 
-    url = 
-    branch = 
-
+    path = _build/deps/folly
+    url = https://github.com/facebook/folly
+    branch = main
+[submodule "googletest"]
+    path = _build/deps/googletest/googletest
+    url = https://github.com/google/googletest
+    branch = main
+[submodule "libbpf"]
+    path = _build/deps/libbpf
+    url = https://github.com/libbpf/libbpf
+    branch = master
+[submodule "grpc"]
+    path = _build/deps/grpc
+    url = https://github.com/grpc/grpc
+    branch = v1.49.1

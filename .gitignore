@@ -10,3 +10,7 @@ _build/deps/lib64
 _build/deps/share
 _build/deps/usr
 _build/deps/bpfprog
+folly_installed
+googletest_installed
+grpc_installed
+libbpf_installed
