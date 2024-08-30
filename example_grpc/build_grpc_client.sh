@@ -26,7 +26,7 @@ protoc -I protos katran.proto --go_out=goclient/src/katranc/lb_katran --go_grpc_
 get_goclient_deps() {
     pushd .
     cd goclient/src/katranc/main
-    GO111MODULE=auto go get
+    GO111MODULE=auto go install
     popd
 }
 
